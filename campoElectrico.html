@@ -1,0 +1,304 @@
+<html>
+  <head>
+    <title>Campo Electrico</title>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <!--<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>-->
+  </head>
+  <body>
+  	<a-scene>
+    <!-- <a-scene position="0 -1.5 -22" rotation="90 0 0"  >-->
+      
+      <a-assets>
+        <a-asset-item id="electron" src="electron.dae"></a-asset-item>
+        <a-asset-item id="proton" src="proton.dae"></a-asset-item>
+        <a-asset-item id="lineasCampo" src="lineasCampo.dae"></a-asset-item>
+        <a-asset-item id="lineaCurva" src="lineaCurva.dae"></a-asset-item>
+        <a-asset-item id="vecUno" src="vecCurvoUno.dae"></a-asset-item>
+        <a-asset-item id="curvaDos" src="linwCuDos.dae"></a-asset-item>
+      </a-assets>
+
+   <!--  <a-marker preset='hiro'>-->
+   	  <!- Electron ->
+
+      <!- Right ->
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="4 0 0" to="5.7 0 0" repeat="indefinite"></a-animation>
+      </a-entity>
+
+      <!- Proton –>
+
+      <!- Right ->      
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="-1.9 0 0" to="-1.25 0 0" repeat="indefinite"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="-1.25 0 0" to="-0.5 0 0" repeat="indefinite"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="-0.5 0 0" to="0.25 0 0" repeat="indefinite"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="0.25 0 0" to="1 0 0" repeat="indefinite"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="1 0 0" to="1.5 0 0" repeat="indefinite"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="1.5 0 0" to="1.9 0 0" repeat="indefinite"></a-animation>
+      </a-entity>
+
+      <!- Left ->
+      <a-entity collada-model="#vecUno" rotation="0 180 0">
+        <a-animation attribute="position" dur="10000" from="-4 0 0" to="-5.7 0 0" repeat="indefinite"></a-animation>
+      </a-entity>     
+
+      <!- Superior Line ->
+
+      <!- Subida ->
+      <a-entity collada-model="#vecUno" rotation="0 0 79">
+        <a-animation attribute="position" dur="10000" from="-3 1 0" to="-2.6 1.8 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 63"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 63">
+        <a-animation attribute="position" dur="10000" from="-2.55 1.9 0" to="-1.9 2.53 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 24"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 25">
+        <a-animation attribute="position" dur="10000" from="-1.7 2.6 0" to="-0.8 2.95 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 0"></a-animation>
+      </a-entity>
+
+      <!- Bajada ->
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="0 2.98 0" to="1.22 2.84 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 -29"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 -20">
+        <a-animation attribute="position" dur="10000" from="1.7 2.6 0" to="2.5 2 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 -46"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 -63">
+        <a-animation attribute="position" dur="10000" from="2.65 1.8 0" to="2.95 1.15 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 -79"></a-animation>
+      </a-entity>
+
+      <!- Bot ->
+      <a-entity collada-model="#vecUno" rotation="0 0 -79">
+        <a-animation attribute="position" dur="10000" from="-3 -1 0" to="-2.6 -1.8 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 -63"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 -63">
+        <a-animation attribute="position" dur="10000" from="-2.55 -1.9 0" to="-1.9 -2.53 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 -24"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 -25">
+        <a-animation attribute="position" dur="10000" from="-1.7 -2.6 0" to="-0.8 -2.95 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 0"></a-animation>
+      </a-entity>
+
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="0 -2.98 0" to="1.22 -2.84 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 29"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 20">
+        <a-animation attribute="position" dur="10000" from="1.7 -2.6 0" to="2.5 -2 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 46"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 0 63">
+        <a-animation attribute="position" dur="10000" from="2.65 -1.8 0" to="2.95 -1.15 0" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 79"></a-animation>
+      </a-entity>
+
+      <!- Front ->
+       <a-entity collada-model="#vecUno" rotation="0 -77 0">
+        <a-animation attribute="position" dur="10000" from="-3 0 1" to="-2.6 0 1.8" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -63 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -63 0">
+        <a-animation attribute="position" dur="10000" from="-2.55 0 1.9" to="-1.9 0 2.53" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -24 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -25 0">
+        <a-animation attribute="position" dur="10000" from="-1.7 0 2.6" to="-0.8 0 2.95" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 0"></a-animation>
+      </a-entity>
+
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="0 0 2.98" to="1.22 0 2.83" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 28 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 20 0">
+        <a-animation attribute="position" dur="10000" from="1.7 0 2.6" to="2.5 0 2" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 46 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 63 0">
+        <a-animation attribute="position" dur="10000" from="2.65 0 1.8" to="2.95 0 1.15" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 79 0"></a-animation>
+      </a-entity>
+
+      <!- Back ->
+      <a-entity collada-model="#vecUno" rotation="0 77 0">
+        <a-animation attribute="position" dur="10000" from="-3 0 -1" to="-2.6 0 -1.8" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 63 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 63 0">
+        <a-animation attribute="position" dur="10000" from="-2.55 0 -1.9" to="-1.9 0 -2.53" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -24 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 25 0">
+        <a-animation attribute="position" dur="10000" from="-1.7 0 -2.6" to="-0.8 0 -2.95" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 0"></a-animation>
+      </a-entity>
+
+      <a-entity collada-model="#vecUno" rotation="0 0 0">
+        <a-animation attribute="position" dur="10000" from="0 0 -2.98" to="1.22 0 -2.83" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -28 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -20 0">
+        <a-animation attribute="position" dur="10000" from="1.7 0 -2.6" to="2.5 0 -2" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -46 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -63 0">
+        <a-animation attribute="position" dur="10000" from="2.65 0 -1.8" to="2.95 0 -1.15" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -79 0"></a-animation>
+      </a-entity>
+
+      <!- Inferior Line ->
+
+      <!- Top Front ->
+      <a-entity collada-model="#vecUno" rotation="0 -15 30">
+        <a-animation attribute="position" dur="10000" from="-2.3 .45 .5" to="-1.8 .55 .55" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -10 18"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -10 18">
+        <a-animation attribute="position" dur="10000" from="-1.8 .55 .55" to="-1 .6 .6" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -10 16"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -10 16">
+        <a-animation attribute="position" dur="10000" from="-1 .6 .6" to="-0.3 .63 .63" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -9 10"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -9 10">
+        <a-animation attribute="position" dur="10000" from="-0.3 .63 .63" to="0.5 .63 .63" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -2 5"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -2 5">
+        <a-animation attribute="position" dur="10000" from="0.5 .63 .63" to="1.3 .6 .6" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -2 1"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -2 1">
+        <a-animation attribute="position" dur="10000" from="1.3 .6 .6" to="2.1 .51 .5" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 5 -5"></a-animation>
+      </a-entity>
+
+      <!- Top Back ->
+      <a-entity collada-model="#vecUno" rotation="0 5 30">
+        <a-animation attribute="position" dur="10000" from="-2.3 .45 -.5" to="-1.8 .55 -.55" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 10 18"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 10 18">
+        <a-animation attribute="position" dur="10000" from="-1.8 .55 -.55" to="-1 .6 -.6" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 10 16"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 5 16">
+        <a-animation attribute="position" dur="10000" from="-1 .6 -.6" to="-0.3 .63 -.63" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 5 5"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 9 5">
+        <a-animation attribute="position" dur="10000" from="-0.3 .63 -.63" to="0.5 .63 -.63" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 2 5"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 2 5">
+        <a-animation attribute="position" dur="10000" from="0.5 .63 -.63" to="1.3 .6 -.6" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 2 1"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 2 1">
+        <a-animation attribute="position" dur="10000" from="1.3 .6 -.6" to="2.1 .51 -.5" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -10 -5"></a-animation>
+      </a-entity>
+
+      <!- Bot Front ->
+      <a-entity collada-model="#vecUno" rotation="0 -15 -30">
+        <a-animation attribute="position" dur="10000" from="-2.3 -.45 .5" to="-1.8 -.55 .55" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -10 10"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -10 -18">
+        <a-animation attribute="position" dur="10000" from="-1.8 -.55 .55" to="-1 -.6 .6" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -10 -16"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -10 -16">
+        <a-animation attribute="position" dur="10000" from="-1 -.6 .6" to="-0.3 -.63 .63" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -9 -10"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -9 -10">
+        <a-animation attribute="position" dur="10000" from="-0.3 -.63 .63" to="0.5 -.63 .63" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -2 -5"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -2 -5">
+        <a-animation attribute="position" dur="10000" from="0.5 -.63 .63" to="1.3 -.6 .6" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -2 -1"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -2 -1">
+        <a-animation attribute="position" dur="10000" from="1.3 -.6 .6" to="2.1 -.51 .5" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 5 5"></a-animation>
+      </a-entity>
+
+      <!- Bot Back ->
+      <a-entity collada-model="#vecUno" rotation="0 10 -30">
+        <a-animation attribute="position" dur="10000" from="-2.3 -.45 -.5" to="-1.8 -.55 -.55" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -5 -18"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 5 -10">
+        <a-animation attribute="position" dur="10000" from="-1.8 -.55 -.55" to="-1 -.6 -.6" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 0 -10"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -5 -10">
+        <a-animation attribute="position" dur="10000" from="-1 -.6 -.6" to="-0.3 -.63 -.63" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -5 -5"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -9 -5">
+        <a-animation attribute="position" dur="10000" from="-0.3 -.63 -.63" to="0.5 -.63 -.63" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -2 -5"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -2 -5">
+        <a-animation attribute="position" dur="10000" from="0.5 -.63 -.63" to="1.3 -.6 -.6" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -2 -1"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#vecUno" rotation="0 -2 -1">
+        <a-animation attribute="position" dur="10000" from="1.3 -.6 -.6" to="2.1 -.51 -.5" repeat="indefinite"></a-animation>
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 -10 -5"></a-animation>
+      </a-entity>
+
+      <!- Lineas de Campo ->
+
+      <!- Recta ->
+      <a-entity collada-model="#lineasCampo" position="0 0 0 "></a-entity>
+      <a-entity collada-model="#lineasCampo" position="-3.7 0 0 "></a-entity>
+      <a-entity collada-model="#lineasCampo" position="3.7 0 0 "></a-entity>
+
+      <!- Curva Inferior->
+      <a-entity collada-model="#lineaCurva" position="0 .4 .4" rotation="45 0 0"></a-entity>
+      <a-entity collada-model="#lineaCurva" position="0 .4 -.4" rotation="-45 0 0"></a-entity>
+      <a-entity collada-model="#lineaCurva" position="0 -.4 -.4" rotation="-135 0 0"></a-entity>
+      <a-entity collada-model="#lineaCurva" position="0 -.4 .4" rotation="135 0 0"></a-entity>
+
+      <!- Curva Superior ->
+      <a-entity collada-model="#curvaDos" position="0 1 0"></a-entity>
+      <a-entity collada-model="#curvaDos" position="0 -1 0" rotation="180 0 0"></a-entity>
+      <a-entity collada-model="#curvaDos" position="0 0 1" rotation="90 0 0"></a-entity>
+      <a-entity collada-model="#curvaDos" position="0 0 -1" rotation="-90 0 0"></a-entity>
+
+      <!- Proton / Electron –>
+      <a-entity collada-model="#electron" position="3 0 0">
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 360 0"></a-animation>
+      </a-entity>
+      <a-entity collada-model="#proton" position="-3 0 0">
+        <a-animation attribute="rotation" dur="10000" repeat="indefinite" fill="forwards" to="0 360 0"></a-animation>
+      </a-entity>
+
+      <!-- </a-marker> -->
+      <a-entity camera look-controls wasd-controls ></a-entity>
+     <a-entity position="0 1 6" rotation="0 0 0"><a-camera></a-camera></a-entity>
+    </a-scene>
+  </body>
+</html>
